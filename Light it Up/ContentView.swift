@@ -38,7 +38,7 @@ struct ContentView: View {
 				}.padding([.top, .bottom], 24)
 				Spacer()
 			}.offset(y: 32)
-			.padding([.leading, .trailing], 24)
+				.padding([.leading, .trailing], 24)
 			
 			//MARK:- GREY CAPSULE FOR THE END OF THE ROPE
 			Capsule(style: .continuous).foregroundColor(.gray).frame(width: 52, height: appHeight * 0.25 + 6)
@@ -56,9 +56,9 @@ struct ContentView: View {
 						toggleAllLights()
 					}
 			}.offset(x: appWidth / 2 - 48, y: -appHeight / 2)
-			.frame(height: 0, alignment: .top)
+				.frame(height: 0, alignment: .top)
 		}.animation(Animation.spring(dampingFraction: 0.65).speed(1.25), value: isOff)
-		.edgesIgnoringSafeArea(.all)
+			.edgesIgnoringSafeArea(.all)
 	}
 	
 	func toggleAllLights() {
